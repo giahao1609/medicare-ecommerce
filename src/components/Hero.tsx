@@ -1,6 +1,7 @@
 import React from 'react';
 import { ShieldCheck, Award, HeartHandshake, ArrowRight, CheckCircle2 } from 'lucide-react';
 import { TRUST_METRICS } from '../data/medicalData';
+import { getAssetUrl } from '../utils/formatters';
 
 interface HeroProps {
   onExploreClick: () => void;
@@ -72,7 +73,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreClick }) => {
               <div className="relative rounded-2xl bg-white p-4 sm:p-5 shadow-xl border border-slate-200/80">
                 <div className="relative overflow-hidden rounded-xl bg-slate-100 aspect-[4/3] flex items-center justify-center border border-slate-100">
                   <img
-                    src="/img/Chemray-420-500x500.jpg"
+                    src={getAssetUrl('img/Chemray-420-500x500.jpg')}
                     alt="Chemray 420 Automatic Biochemistry Analyzer"
                     className="w-full h-full object-contain p-2 hover:scale-105 transition-transform duration-300"
                   />

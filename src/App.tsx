@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { PRODUCTS, PARTNERS } from './data/medicalData';
 import { Product, CartItem } from './types';
+import { getAssetUrl } from './utils/formatters';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { CategoryFilter } from './components/CategoryFilter';
@@ -274,7 +275,7 @@ export const App: React.FC = () => {
                 <div className="relative rounded-2xl bg-white/5 border border-white/10 p-5 backdrop-blur-sm max-w-sm w-full text-center">
                   <div className="aspect-[3/4] max-h-72 mx-auto flex items-center justify-center overflow-hidden rounded-xl bg-slate-950/40 p-2 border border-white/5">
                     <img
-                      src="/img/bando.png"
+                      src={getAssetUrl('img/bando.png')}
                       alt="Bản đồ mạng lưới phân phối y tế 63 tỉnh thành"
                       className="w-full h-full object-contain filter brightness-110 drop-shadow-md"
                     />
