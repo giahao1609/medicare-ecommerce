@@ -96,17 +96,6 @@ export const Hero: React.FC<HeroProps> = ({ onExploreClick }) => {
                   </p>
                 </div>
               </div>
-
-              {/* Floating Mini Badge */}
-              <div className="absolute -bottom-4 -left-4 sm:-bottom-5 sm:-left-5 bg-white/95 backdrop-blur-md rounded-xl p-3 border border-slate-200 shadow-lg hidden sm:flex items-center gap-3">
-                <div className="w-10 h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center text-emerald-600 font-bold">
-                  24/7
-                </div>
-                <div className="text-xs">
-                  <p className="font-bold text-slate-900">Bảo Hành Kỹ Thuật</p>
-                  <p className="text-slate-500">Đội ngũ kỹ sư viện trực tuyến</p>
-                </div>
-              </div>
             </div>
           </div>
 
@@ -133,3 +122,4 @@ export const Hero: React.FC<HeroProps> = ({ onExploreClick }) => {
     </section>
   );
 };
+
